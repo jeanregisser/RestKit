@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0F37A234150E11EC002A42A1 /* LCLNSLogger.h in Headers */ = {isa = PBXBuildFile; fileRef = 0F37A22C150E11EC002A42A1 /* LCLNSLogger.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0F37A235150E11EC002A42A1 /* LCLNSLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F37A22D150E11EC002A42A1 /* LCLNSLogger.m */; };
+		0F37A236150E11EC002A42A1 /* LCLNSLoggerConfig.h in Headers */ = {isa = PBXBuildFile; fileRef = 0F37A22E150E11EC002A42A1 /* LCLNSLoggerConfig.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0F37A238150E11EC002A42A1 /* LoggerClient.h in Headers */ = {isa = PBXBuildFile; fileRef = 0F37A230150E11EC002A42A1 /* LoggerClient.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0F37A239150E11EC002A42A1 /* LoggerClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F37A231150E11EC002A42A1 /* LoggerClient.m */; };
+		0F37A23A150E11EC002A42A1 /* LoggerCommon.h in Headers */ = {isa = PBXBuildFile; fileRef = 0F37A232150E11EC002A42A1 /* LoggerCommon.h */; };
 		250CA67D147D8E8B0047D347 /* OCHamcrest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 250CA67B147D8E800047D347 /* OCHamcrest.framework */; };
 		250CA67E147D8E8F0047D347 /* OCHamcrestIOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 250CA67C147D8E800047D347 /* OCHamcrestIOS.framework */; };
 		250CA680147D8F050047D347 /* OCHamcrest.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 250CA67B147D8E800047D347 /* OCHamcrest.framework */; };
@@ -171,8 +177,6 @@
 		25160EEB1456532C0060A5C5 /* lcl_config_logger.template.h in Headers */ = {isa = PBXBuildFile; fileRef = 25160EA61456532C0060A5C5 /* lcl_config_logger.template.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		25160EF81456532C0060A5C5 /* LCLNSLog.h in Headers */ = {isa = PBXBuildFile; fileRef = 25160EB01456532C0060A5C5 /* LCLNSLog.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		25160EF91456532C0060A5C5 /* LCLNSLog.h in Headers */ = {isa = PBXBuildFile; fileRef = 25160EB01456532C0060A5C5 /* LCLNSLog.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		25160EFA1456532C0060A5C5 /* LCLNSLog.m in Sources */ = {isa = PBXBuildFile; fileRef = 25160EB11456532C0060A5C5 /* LCLNSLog.m */; };
-		25160EFB1456532C0060A5C5 /* LCLNSLog.m in Sources */ = {isa = PBXBuildFile; fileRef = 25160EB11456532C0060A5C5 /* LCLNSLog.m */; };
 		25160F081456532C0060A5C5 /* SOCKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 25160EBD1456532C0060A5C5 /* SOCKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		25160F091456532C0060A5C5 /* SOCKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 25160EBD1456532C0060A5C5 /* SOCKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		25160F0A1456532C0060A5C5 /* SOCKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 25160EBE1456532C0060A5C5 /* SOCKit.m */; };
@@ -550,6 +554,14 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		0F37A22C150E11EC002A42A1 /* LCLNSLogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCLNSLogger.h; sourceTree = "<group>"; };
+		0F37A22D150E11EC002A42A1 /* LCLNSLogger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LCLNSLogger.m; sourceTree = "<group>"; };
+		0F37A22E150E11EC002A42A1 /* LCLNSLoggerConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCLNSLoggerConfig.h; sourceTree = "<group>"; };
+		0F37A22F150E11EC002A42A1 /* LCLNSLoggerConfig.template.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCLNSLoggerConfig.template.h; sourceTree = "<group>"; };
+		0F37A230150E11EC002A42A1 /* LoggerClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoggerClient.h; sourceTree = "<group>"; };
+		0F37A231150E11EC002A42A1 /* LoggerClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoggerClient.m; sourceTree = "<group>"; };
+		0F37A232150E11EC002A42A1 /* LoggerCommon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoggerCommon.h; sourceTree = "<group>"; };
+		0F37A233150E11EC002A42A1 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
 		250CA67B147D8E800047D347 /* OCHamcrest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = OCHamcrest.framework; sourceTree = "<group>"; };
 		250CA67C147D8E800047D347 /* OCHamcrestIOS.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = OCHamcrestIOS.framework; sourceTree = "<group>"; };
 		25160D1614564E810060A5C5 /* libRestKit.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libRestKit.a; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -925,6 +937,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0F37A22B150E11EC002A42A1 /* NSLogger */ = {
+			isa = PBXGroup;
+			children = (
+				0F37A22C150E11EC002A42A1 /* LCLNSLogger.h */,
+				0F37A22D150E11EC002A42A1 /* LCLNSLogger.m */,
+				0F37A22E150E11EC002A42A1 /* LCLNSLoggerConfig.h */,
+				0F37A22F150E11EC002A42A1 /* LCLNSLoggerConfig.template.h */,
+				0F37A230150E11EC002A42A1 /* LoggerClient.h */,
+				0F37A231150E11EC002A42A1 /* LoggerClient.m */,
+				0F37A232150E11EC002A42A1 /* LoggerCommon.h */,
+				0F37A233150E11EC002A42A1 /* README.md */,
+			);
+			path = NSLogger;
+			sourceTree = "<group>";
+		};
 		250CA67A147D8E7F0047D347 /* OCHamcrest */ = {
 			isa = PBXGroup;
 			children = (
@@ -1233,6 +1260,7 @@
 			children = (
 				25160EA11456532C0060A5C5 /* Core */,
 				25160EAE1456532C0060A5C5 /* NSLog */,
+				0F37A22B150E11EC002A42A1 /* NSLogger */,
 			);
 			path = LibComponentLogging;
 			sourceTree = "<group>";
@@ -1660,6 +1688,10 @@
 				25160F081456532C0060A5C5 /* SOCKit.h in Headers */,
 				25160E2E145650490060A5C5 /* RestKit.h in Headers */,
 				25B408261491CDDC00F21111 /* RKDirectory.h in Headers */,
+				0F37A234150E11EC002A42A1 /* LCLNSLogger.h in Headers */,
+				0F37A236150E11EC002A42A1 /* LCLNSLoggerConfig.h in Headers */,
+				0F37A238150E11EC002A42A1 /* LoggerClient.h in Headers */,
+				0F37A23A150E11EC002A42A1 /* LoggerCommon.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2074,9 +2106,10 @@
 				25160ED31456532C0060A5C5 /* FileMD5Hash.c in Sources */,
 				25160EDF1456532C0060A5C5 /* JSONKit.m in Sources */,
 				25160EE41456532C0060A5C5 /* lcl.m in Sources */,
-				25160EFA1456532C0060A5C5 /* LCLNSLog.m in Sources */,
 				25160F0A1456532C0060A5C5 /* SOCKit.m in Sources */,
 				25B408281491CDDC00F21111 /* RKDirectory.m in Sources */,
+				0F37A235150E11EC002A42A1 /* LCLNSLogger.m in Sources */,
+				0F37A239150E11EC002A42A1 /* LoggerClient.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2163,7 +2196,6 @@
 				25160ED41456532C0060A5C5 /* FileMD5Hash.c in Sources */,
 				25160EE01456532C0060A5C5 /* JSONKit.m in Sources */,
 				25160EE51456532C0060A5C5 /* lcl.m in Sources */,
-				25160EFB1456532C0060A5C5 /* LCLNSLog.m in Sources */,
 				25160F0B1456532C0060A5C5 /* SOCKit.m in Sources */,
 				25160F28145655BA0060A5C5 /* NSDictionary+RKRequestSerialization.m in Sources */,
 				25160F2A145655BA0060A5C5 /* RKClient.m in Sources */,

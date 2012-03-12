@@ -19,4 +19,4 @@
 //
 
 // NSLog
-#import "LCLNSLog.h"
+#import "LCLNSLogger.h"

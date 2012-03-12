@@ -34,6 +34,8 @@
  * SOFTWARE,   EVEN  IF   ADVISED  OF   THE  POSSIBILITY   OF  SUCH   DAMAGE.
  * 
  */
+#import "LoggerClient.h"
+
 #import <sys/time.h>
 #if !TARGET_OS_IPHONE
 	#import <sys/types.h>
@@ -44,7 +46,6 @@
 #endif
 #import <fcntl.h>
 
-#import "LoggerClient.h"
 #import "LoggerCommon.h"
 
 /* --------------------------------------------------------------------------------

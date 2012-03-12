@@ -27,6 +27,10 @@
 #import "LCLNSLogger.h"
 #import "LoggerClient.h"
 
+#if TARGET_OS_IPHONE
+#import <UIKit/UIKit.h>
+#endif
+
 
 //
 // Configuration checks.
@@ -131,7 +135,11 @@ static BOOL _LCLNSLogger_showFunctionName = NO;
     // get configuration options for the logger
     const BOOL logToConsole = (_LCLNSLogger_LogToConsole);
     const BOOL bufferLocallyUntilConnection = (_LCLNSLogger_BufferLocallyUntilConnection);
-    const BOOL browseBonjour = (_LCLNSLogger_BrowseBonjour);
+#if TARGET_IPHONE_SIMULATOR
+    const BOOL browseBonjour = NO;
+#else
+	const BOOL browseBonjour = (_LCLNSLogger_BrowseBonjour);
+#endif
     const BOOL browseOnlyLocalDomains = (_LCLNSLogger_BrowseOnlyLocalDomains);
     const BOOL useSSL = (_LCLNSLogger_UseSSL);
     
@@ -143,6 +151,12 @@ static BOOL _LCLNSLogger_showFunctionName = NO;
     options |= browseOnlyLocalDomains ? kLoggerOption_BrowseOnlyLocalDomain : 0;
     options |= useSSL ? kLoggerOption_UseSSL : 0;
     LoggerSetOptions(_LCLNSLogger_logger, options);
+	
+#if TARGET_IPHONE_SIMULATOR
+	LoggerSetViewerHost(_LCLNSLogger_logger, (CFStringRef)@"0.0.0.0", 50000);
+#elif TARGET_OS_IPHONE
+	LoggerSetupBonjour(_LCLNSLogger_logger, NULL, (__bridge CFStringRef)[UIDevice currentDevice].name);
+#endif
     
     // activate the logger
     LoggerStart(_LCLNSLogger_logger);

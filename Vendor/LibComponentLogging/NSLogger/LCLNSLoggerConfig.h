@@ -50,7 +50,7 @@
 
 // Tell LCLNSLogger whether it should set the NSLogger LogToConsole option.
 #define _LCLNSLogger_LogToConsole /* (BOOL) */                                 \
-    NO
+    YES
 
 // Tell LCLNSLogger whether it should set the NSLogger BufferLocallyUntilConnection option.
 #define _LCLNSLogger_BufferLocallyUntilConnection /* (BOOL) */                 \

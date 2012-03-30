@@ -164,7 +164,7 @@
     NSFetchRequest *fetchRequest = [[NSFetchRequest alloc] init];
     [fetchRequest setEntity:entity];
     [fetchRequest setFetchLimit:1];
-    [fetchRequest setPredicate:[NSPredicate predicateWithFormat:@"%@ = %@", mapping.primaryKeyAttribute, lookupValue]];
+    [fetchRequest setPredicate:[NSPredicate predicateWithFormat:@"%K = %@", mapping.primaryKeyAttribute, lookupValue]];
     [fetchRequest setResultType:NSManagedObjectIDResultType];
 
     NSArray *objectIds = [NSManagedObject executeFetchRequest:fetchRequest inContext:managedObjectContext];
@@ -211,7 +211,7 @@
 
 - (void)expireCacheEntryForEntity:(NSEntityDescription *)entity {
     NSAssert(entity, @"Cannot expire cache entry for an entity without an entity");
-    RKLogTrace(@"About to expirce cache for entity name=%@", entity.name);
+    RKLogTrace(@"About to expire cache for entity name=%@", entity.name);
     [_entityCache removeObjectForKey:entity.name];
 }
 

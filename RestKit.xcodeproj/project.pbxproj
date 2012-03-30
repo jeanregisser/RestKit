@@ -500,6 +500,23 @@
 		254A62BC14AD544200939BEE /* RKObjectPaginator.m in Sources */ = {isa = PBXBuildFile; fileRef = 254A62B814AD544200939BEE /* RKObjectPaginator.m */; };
 		254A62C014AD591C00939BEE /* RKObjectPaginatorTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 254A62BF14AD591C00939BEE /* RKObjectPaginatorTest.m */; };
 		254A62C114AD591C00939BEE /* RKObjectPaginatorTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 254A62BF14AD591C00939BEE /* RKObjectPaginatorTest.m */; };
+		257ABAB015112DD500CCAA76 /* NSManagedObjectContext+RKAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 257ABAAE15112DD400CCAA76 /* NSManagedObjectContext+RKAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		257ABAB115112DD500CCAA76 /* NSManagedObjectContext+RKAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 257ABAAE15112DD400CCAA76 /* NSManagedObjectContext+RKAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		257ABAB215112DD500CCAA76 /* NSManagedObjectContext+RKAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 257ABAAF15112DD400CCAA76 /* NSManagedObjectContext+RKAdditions.m */; };
+		257ABAB315112DD500CCAA76 /* NSManagedObjectContext+RKAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 257ABAAF15112DD400CCAA76 /* NSManagedObjectContext+RKAdditions.m */; };
+		257ABAB61511371E00CCAA76 /* NSManagedObject+RKAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 257ABAB41511371C00CCAA76 /* NSManagedObject+RKAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		257ABAB71511371E00CCAA76 /* NSManagedObject+RKAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 257ABAB41511371C00CCAA76 /* NSManagedObject+RKAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		257ABAB81511371E00CCAA76 /* NSManagedObject+RKAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 257ABAB51511371D00CCAA76 /* NSManagedObject+RKAdditions.m */; };
+		257ABAB91511371E00CCAA76 /* NSManagedObject+RKAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 257ABAB51511371D00CCAA76 /* NSManagedObject+RKAdditions.m */; };
+		259C301715128079003066A2 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 25EC1B0014F8078100C3CF3F /* CoreFoundation.framework */; };
+		259C3022151280A1003066A2 /* blackArrow.png in Resources */ = {isa = PBXBuildFile; fileRef = 25EC1ADE14F8022600C3CF3F /* blackArrow.png */; };
+		259C3023151280A1003066A2 /* blackArrow@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 25EC1ADF14F8022600C3CF3F /* blackArrow@2x.png */; };
+		259C3024151280A1003066A2 /* blueArrow.png in Resources */ = {isa = PBXBuildFile; fileRef = 25EC1AE014F8022600C3CF3F /* blueArrow.png */; };
+		259C3025151280A1003066A2 /* blueArrow@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 25EC1AE114F8022600C3CF3F /* blueArrow@2x.png */; };
+		259C3026151280A1003066A2 /* grayArrow.png in Resources */ = {isa = PBXBuildFile; fileRef = 25EC1AE214F8022600C3CF3F /* grayArrow.png */; };
+		259C3027151280A1003066A2 /* grayArrow@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 25EC1AE314F8022600C3CF3F /* grayArrow@2x.png */; };
+		259C3028151280A1003066A2 /* whiteArrow.png in Resources */ = {isa = PBXBuildFile; fileRef = 25EC1AE414F8022600C3CF3F /* whiteArrow.png */; };
+		259C3029151280A1003066A2 /* whiteArrow@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 25EC1AE514F8022600C3CF3F /* whiteArrow@2x.png */; };
 		25A34245147D8AAA0009758D /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 25A34244147D8AAA0009758D /* Security.framework */; };
 		25B408261491CDDC00F21111 /* RKDirectory.h in Headers */ = {isa = PBXBuildFile; fileRef = 25B408241491CDDB00F21111 /* RKDirectory.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		25B408271491CDDC00F21111 /* RKDirectory.h in Headers */ = {isa = PBXBuildFile; fileRef = 25B408241491CDDB00F21111 /* RKDirectory.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -620,6 +637,8 @@
 		25CA7A8F14EC570200888FF8 /* RKObjectMappingDefinition.m in Sources */ = {isa = PBXBuildFile; fileRef = 25CA7A8E14EC570100888FF8 /* RKObjectMappingDefinition.m */; };
 		25CA7A9014EC570200888FF8 /* RKObjectMappingDefinition.m in Sources */ = {isa = PBXBuildFile; fileRef = 25CA7A8E14EC570100888FF8 /* RKObjectMappingDefinition.m */; };
 		25CA7A9114EC5C2D00888FF8 /* RKTestFixture.m in Sources */ = {isa = PBXBuildFile; fileRef = 252EFB2114D9B35D004863C8 /* RKTestFixture.m */; };
+		25E36E0215195CED00F9E448 /* RKFetchRequestMappingCacheTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 25E36E0115195CED00F9E448 /* RKFetchRequestMappingCacheTest.m */; };
+		25E36E0315195CED00F9E448 /* RKFetchRequestMappingCacheTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 25E36E0115195CED00F9E448 /* RKFetchRequestMappingCacheTest.m */; };
 		25EC1A2C14F6FDAD00C3CF3F /* RKObjectManager+RKTableController.h in Headers */ = {isa = PBXBuildFile; fileRef = 25EC1A2A14F6FDAC00C3CF3F /* RKObjectManager+RKTableController.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		25EC1A2D14F6FDAD00C3CF3F /* RKObjectManager+RKTableController.h in Headers */ = {isa = PBXBuildFile; fileRef = 25EC1A2A14F6FDAC00C3CF3F /* RKObjectManager+RKTableController.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		25EC1A2E14F6FDAD00C3CF3F /* RKObjectManager+RKTableController.m in Sources */ = {isa = PBXBuildFile; fileRef = 25EC1A2B14F6FDAC00C3CF3F /* RKObjectManager+RKTableController.m */; };
@@ -655,16 +674,6 @@
 		25EC1AC114F8019F00C3CF3F /* RKRefreshTriggerView.h in Headers */ = {isa = PBXBuildFile; fileRef = 25EC1ABA14F8019F00C3CF3F /* RKRefreshTriggerView.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		25EC1AC214F8019F00C3CF3F /* RKRefreshTriggerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 25EC1ABB14F8019F00C3CF3F /* RKRefreshTriggerView.m */; };
 		25EC1AC314F8019F00C3CF3F /* RKRefreshTriggerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 25EC1ABB14F8019F00C3CF3F /* RKRefreshTriggerView.m */; };
-		25EC1B0114F8078100C3CF3F /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 25EC1B0014F8078100C3CF3F /* CoreFoundation.framework */; };
-		25EC1B0D14F8079800C3CF3F /* RestKitCoreData.xcdatamodeld in Resources */ = {isa = PBXBuildFile; fileRef = 25EC1ADB14F8022600C3CF3F /* RestKitCoreData.xcdatamodeld */; };
-		25EC1B0E14F8079800C3CF3F /* blackArrow.png in Resources */ = {isa = PBXBuildFile; fileRef = 25EC1ADE14F8022600C3CF3F /* blackArrow.png */; };
-		25EC1B0F14F8079800C3CF3F /* blackArrow@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 25EC1ADF14F8022600C3CF3F /* blackArrow@2x.png */; };
-		25EC1B1014F8079800C3CF3F /* blueArrow.png in Resources */ = {isa = PBXBuildFile; fileRef = 25EC1AE014F8022600C3CF3F /* blueArrow.png */; };
-		25EC1B1114F8079800C3CF3F /* blueArrow@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 25EC1AE114F8022600C3CF3F /* blueArrow@2x.png */; };
-		25EC1B1214F8079800C3CF3F /* grayArrow.png in Resources */ = {isa = PBXBuildFile; fileRef = 25EC1AE214F8022600C3CF3F /* grayArrow.png */; };
-		25EC1B1314F8079800C3CF3F /* grayArrow@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 25EC1AE314F8022600C3CF3F /* grayArrow@2x.png */; };
-		25EC1B1414F8079800C3CF3F /* whiteArrow.png in Resources */ = {isa = PBXBuildFile; fileRef = 25EC1AE414F8022600C3CF3F /* whiteArrow.png */; };
-		25EC1B1514F8079800C3CF3F /* whiteArrow@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 25EC1AE514F8022600C3CF3F /* whiteArrow@2x.png */; };
 		25EC1B3914F84B5D00C3CF3F /* UIImage+RKAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 25EC1B3714F84B5C00C3CF3F /* UIImage+RKAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		25EC1B3A14F84B5D00C3CF3F /* UIImage+RKAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 25EC1B3714F84B5C00C3CF3F /* UIImage+RKAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		25EC1B3B14F84B5D00C3CF3F /* UIImage+RKAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 25EC1B3814F84B5C00C3CF3F /* UIImage+RKAdditions.m */; };
@@ -1032,6 +1041,11 @@
 		254A62B714AD544200939BEE /* RKObjectPaginator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RKObjectPaginator.h; sourceTree = "<group>"; };
 		254A62B814AD544200939BEE /* RKObjectPaginator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RKObjectPaginator.m; sourceTree = "<group>"; };
 		254A62BF14AD591C00939BEE /* RKObjectPaginatorTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RKObjectPaginatorTest.m; sourceTree = "<group>"; };
+		257ABAAE15112DD400CCAA76 /* NSManagedObjectContext+RKAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSManagedObjectContext+RKAdditions.h"; sourceTree = "<group>"; };
+		257ABAAF15112DD400CCAA76 /* NSManagedObjectContext+RKAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSManagedObjectContext+RKAdditions.m"; sourceTree = "<group>"; };
+		257ABAB41511371C00CCAA76 /* NSManagedObject+RKAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSManagedObject+RKAdditions.h"; sourceTree = "<group>"; };
+		257ABAB51511371D00CCAA76 /* NSManagedObject+RKAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSManagedObject+RKAdditions.m"; sourceTree = "<group>"; };
+		259C301615128079003066A2 /* RestKitResources.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RestKitResources.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
 		25A34244147D8AAA0009758D /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = SDKs/MacOSX10.7.sdk/System/Library/Frameworks/Security.framework; sourceTree = DEVELOPER_DIR; };
 		25B408241491CDDB00F21111 /* RKDirectory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RKDirectory.h; sourceTree = "<group>"; };
 		25B408251491CDDB00F21111 /* RKDirectory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RKDirectory.m; sourceTree = "<group>"; };
@@ -1126,6 +1140,7 @@
 		25B6EA0514CF946300B1E881 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		25B6EA0714CF947D00B1E881 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		25CA7A8E14EC570100888FF8 /* RKObjectMappingDefinition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RKObjectMappingDefinition.m; sourceTree = "<group>"; };
+		25E36E0115195CED00F9E448 /* RKFetchRequestMappingCacheTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RKFetchRequestMappingCacheTest.m; sourceTree = "<group>"; };
 		25EC1A2A14F6FDAC00C3CF3F /* RKObjectManager+RKTableController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "RKObjectManager+RKTableController.h"; sourceTree = "<group>"; };
 		25EC1A2B14F6FDAC00C3CF3F /* RKObjectManager+RKTableController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "RKObjectManager+RKTableController.m"; sourceTree = "<group>"; };
 		25EC1A4914F73CA200C3CF3F /* RKInMemoryEntityCacheTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RKInMemoryEntityCacheTest.m; sourceTree = "<group>"; };
@@ -1145,7 +1160,6 @@
 		25EC1AE314F8022600C3CF3F /* grayArrow@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "grayArrow@2x.png"; sourceTree = "<group>"; };
 		25EC1AE414F8022600C3CF3F /* whiteArrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = whiteArrow.png; sourceTree = "<group>"; };
 		25EC1AE514F8022600C3CF3F /* whiteArrow@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "whiteArrow@2x.png"; sourceTree = "<group>"; };
-		25EC1AFF14F8078100C3CF3F /* RestKitResources.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RestKitResources.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
 		25EC1B0014F8078100C3CF3F /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
 		25EC1B1E14F821B500C3CF3F /* RestKitResources-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RestKitResources-Prefix.pch"; sourceTree = "<group>"; };
 		25EC1B1F14F8220800C3CF3F /* RestKitResources-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "RestKitResources-Info.plist"; sourceTree = "<group>"; };
@@ -1232,11 +1246,11 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		25EC1AFC14F8078100C3CF3F /* Frameworks */ = {
+		259C301315128079003066A2 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				25EC1B0114F8078100C3CF3F /* CoreFoundation.framework in Frameworks */,
+				259C301715128079003066A2 /* CoreFoundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1286,7 +1300,7 @@
 				25160D2614564E820060A5C5 /* RestKitTests.octest */,
 				25160E62145651060060A5C5 /* RestKit.framework */,
 				25160E78145651060060A5C5 /* RestKitFrameworkTests.octest */,
-				25EC1AFF14F8078100C3CF3F /* RestKitResources.bundle */,
+				259C301615128079003066A2 /* RestKitResources.bundle */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -1367,6 +1381,10 @@
 				73DA8E1B14D1BA960054DD73 /* RKObjectMappingProvider+CoreData.m */,
 				25160D56145650490060A5C5 /* RKObjectPropertyInspector+CoreData.h */,
 				25160D57145650490060A5C5 /* RKObjectPropertyInspector+CoreData.m */,
+				257ABAAE15112DD400CCAA76 /* NSManagedObjectContext+RKAdditions.h */,
+				257ABAAF15112DD400CCAA76 /* NSManagedObjectContext+RKAdditions.m */,
+				257ABAB41511371C00CCAA76 /* NSManagedObject+RKAdditions.h */,
+				257ABAB51511371D00CCAA76 /* NSManagedObject+RKAdditions.m */,
 			);
 			path = CoreData;
 			sourceTree = "<group>";
@@ -1676,6 +1694,7 @@
 				25160FC91456F2330060A5C5 /* RKManagedObjectMappingTest.m */,
 				25160FCB1456F2330060A5C5 /* RKManagedObjectStoreTest.m */,
 				25160FCC1456F2330060A5C5 /* RKManagedObjectThreadSafeInvocationTest.m */,
+				25E36E0115195CED00F9E448 /* RKFetchRequestMappingCacheTest.m */,
 			);
 			name = CoreData;
 			path = Logic/CoreData;
@@ -2231,6 +2250,8 @@
 				0FC8CB32150FC4A70037FC00 /* LCLNSLoggerConfig.template.h in Headers */,
 				0FC8CB33150FC4A70037FC00 /* LoggerClient.h in Headers */,
 				0FC8CB35150FC4A70037FC00 /* LoggerCommon.h in Headers */,
+				257ABAB015112DD500CCAA76 /* NSManagedObjectContext+RKAdditions.h in Headers */,
+				257ABAB61511371E00CCAA76 /* NSManagedObject+RKAdditions.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2348,6 +2369,8 @@
 				25EC1ABD14F8019F00C3CF3F /* RKRefreshGestureRecognizer.h in Headers */,
 				25EC1AC114F8019F00C3CF3F /* RKRefreshTriggerView.h in Headers */,
 				25EC1B3A14F84B5D00C3CF3F /* UIImage+RKAdditions.h in Headers */,
+				257ABAB115112DD500CCAA76 /* NSManagedObjectContext+RKAdditions.h in Headers */,
+				257ABAB71511371E00CCAA76 /* NSManagedObject+RKAdditions.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2428,14 +2451,14 @@
 			productReference = 25160E78145651060060A5C5 /* RestKitFrameworkTests.octest */;
 			productType = "com.apple.product-type.bundle";
 		};
-		25EC1AFE14F8078100C3CF3F /* RestKitResources */ = {
+		259C301515128079003066A2 /* RestKitResources */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 25EC1B0B14F8078100C3CF3F /* Build configuration list for PBXNativeTarget "RestKitResources" */;
+			buildConfigurationList = 259C301F15128079003066A2 /* Build configuration list for PBXNativeTarget "RestKitResources" */;
 			buildPhases = (
-				25EC1AFB14F8078100C3CF3F /* Sources */,
-				25EC1AFC14F8078100C3CF3F /* Frameworks */,
-				25EC1AFD14F8078100C3CF3F /* Resources */,
-				25EC1B2414F8229E00C3CF3F /* RSync Bundle to Source Tree */,
+				259C301215128079003066A2 /* Sources */,
+				259C301315128079003066A2 /* Frameworks */,
+				259C301415128079003066A2 /* Resources */,
+				259C303B151289DD003066A2 /* Sync Resources to Project */,
 			);
 			buildRules = (
 			);
@@ -2443,7 +2466,7 @@
 			);
 			name = RestKitResources;
 			productName = RestKitResources;
-			productReference = 25EC1AFF14F8078100C3CF3F /* RestKitResources.bundle */;
+			productReference = 259C301615128079003066A2 /* RestKitResources.bundle */;
 			productType = "com.apple.product-type.bundle";
 		};
 /* End PBXNativeTarget section */
@@ -2471,7 +2494,7 @@
 				25160D2514564E820060A5C5 /* RestKitTests */,
 				25160E61145651060060A5C5 /* RestKitFramework */,
 				25160E77145651060060A5C5 /* RestKitFrameworkTests */,
-				25EC1AFE14F8078100C3CF3F /* RestKitResources */,
+				259C301515128079003066A2 /* RestKitResources */,
 			);
 		};
 /* End PBXProject section */
@@ -2578,19 +2601,18 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		25EC1AFD14F8078100C3CF3F /* Resources */ = {
+		259C301415128079003066A2 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				25EC1B0D14F8079800C3CF3F /* RestKitCoreData.xcdatamodeld in Resources */,
-				25EC1B0E14F8079800C3CF3F /* blackArrow.png in Resources */,
-				25EC1B0F14F8079800C3CF3F /* blackArrow@2x.png in Resources */,
-				25EC1B1014F8079800C3CF3F /* blueArrow.png in Resources */,
-				25EC1B1114F8079800C3CF3F /* blueArrow@2x.png in Resources */,
-				25EC1B1214F8079800C3CF3F /* grayArrow.png in Resources */,
-				25EC1B1314F8079800C3CF3F /* grayArrow@2x.png in Resources */,
-				25EC1B1414F8079800C3CF3F /* whiteArrow.png in Resources */,
-				25EC1B1514F8079800C3CF3F /* whiteArrow@2x.png in Resources */,
+				259C3022151280A1003066A2 /* blackArrow.png in Resources */,
+				259C3023151280A1003066A2 /* blackArrow@2x.png in Resources */,
+				259C3024151280A1003066A2 /* blueArrow.png in Resources */,
+				259C3025151280A1003066A2 /* blueArrow@2x.png in Resources */,
+				259C3026151280A1003066A2 /* grayArrow.png in Resources */,
+				259C3027151280A1003066A2 /* grayArrow@2x.png in Resources */,
+				259C3028151280A1003066A2 /* whiteArrow.png in Resources */,
+				259C3029151280A1003066A2 /* whiteArrow@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2623,19 +2645,19 @@
 			shellPath = /bin/sh;
 			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
 		};
-		25EC1B2414F8229E00C3CF3F /* RSync Bundle to Source Tree */ = {
+		259C303B151289DD003066A2 /* Sync Resources to Project */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "RSync Bundle to Source Tree";
+			name = "Sync Resources to Project";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "echo \"rsync -av --delete ${BUILT_PRODUCTS_DIR}/${FULL_PRODUCT_NAME} ${SOURCE_ROOT}/${FULL_PRODUCT_NAME}\"";
+			shellPath = "/bin/bash -ex";
+			shellScript = "rsync -av --delete ${BUILT_PRODUCTS_DIR}/${FULL_PRODUCT_NAME}/ ${SOURCE_ROOT}/${FULL_PRODUCT_NAME}";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -2747,6 +2769,8 @@
 				25EC1B3B14F84B5D00C3CF3F /* UIImage+RKAdditions.m in Sources */,
 				0FC8CB30150FC4A70037FC00 /* LCLNSLogger.m in Sources */,
 				0FC8CB34150FC4A70037FC00 /* LoggerClient.m in Sources */,
+				257ABAB215112DD500CCAA76 /* NSManagedObjectContext+RKAdditions.m in Sources */,
+				257ABAB81511371E00CCAA76 /* NSManagedObject+RKAdditions.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2827,6 +2851,7 @@
 				252EFB0A14D98F4D004863C8 /* RKSearchWordObserverTest.m in Sources */,
 				252EFB0D14D98F76004863C8 /* RKMutableBlockDictionaryTest.m in Sources */,
 				25EC1A4A14F73CA200C3CF3F /* RKInMemoryEntityCacheTest.m in Sources */,
+				25E36E0215195CED00F9E448 /* RKFetchRequestMappingCacheTest.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2920,6 +2945,8 @@
 				25EC1ABF14F8019F00C3CF3F /* RKRefreshGestureRecognizer.m in Sources */,
 				25EC1AC314F8019F00C3CF3F /* RKRefreshTriggerView.m in Sources */,
 				25EC1B3C14F84B5D00C3CF3F /* UIImage+RKAdditions.m in Sources */,
+				257ABAB315112DD500CCAA76 /* NSManagedObjectContext+RKAdditions.m in Sources */,
+				257ABAB91511371E00CCAA76 /* NSManagedObject+RKAdditions.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -3000,10 +3027,11 @@
 				252EFB0B14D98F4D004863C8 /* RKSearchWordObserverTest.m in Sources */,
 				252EFB0E14D98F76004863C8 /* RKMutableBlockDictionaryTest.m in Sources */,
 				25EC1A4B14F73CA200C3CF3F /* RKInMemoryEntityCacheTest.m in Sources */,
+				25E36E0315195CED00F9E448 /* RKFetchRequestMappingCacheTest.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		25EC1AFB14F8078100C3CF3F /* Sources */ = {
+		259C301215128079003066A2 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -3123,14 +3151,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
 					"\"$(SRCROOT)/Tests/Vendor\"",
 					"\"$(SRCROOT)/Tests/Vendor/OCHamcrest\"",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Code/Support/RestKit-Prefix.pch";
-				HEADER_SEARCH_PATHS = "$(SRCROOT)/Tests/Vendor/OCMock";
+				HEADER_SEARCH_PATHS = "\"$(SRCROOT)/Tests/Vendor/OCMock\"";
 				INFOPLIST_FILE = "Resources/PLISTs/RestKitTests-Info.plist";
 				LIBRARY_SEARCH_PATHS = "${CONFIGURATION_BUILD_DIR}";
 				OBJROOT = "$(SRCROOT)/Build";
@@ -3145,14 +3173,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
 					"\"$(SRCROOT)/Tests/Vendor\"",
 					"\"$(SRCROOT)/Tests/Vendor/OCHamcrest\"",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Code/Support/RestKit-Prefix.pch";
-				HEADER_SEARCH_PATHS = "$(SRCROOT)/Tests/Vendor/OCMock";
+				HEADER_SEARCH_PATHS = "\"$(SRCROOT)/Tests/Vendor/OCMock\"";
 				INFOPLIST_FILE = "Resources/PLISTs/RestKitTests-Info.plist";
 				LIBRARY_SEARCH_PATHS = "${CONFIGURATION_BUILD_DIR}";
 				OBJROOT = "$(SRCROOT)/Build";
@@ -3220,7 +3248,7 @@
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				FRAMEWORK_SEARCH_PATHS = (
-					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
 					"\"$(SRCROOT)/Tests/Vendor\"",
 					"\"$(SRCROOT)/Tests/Vendor/OCHamcrest\"",
 				);
@@ -3228,7 +3256,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Code/Support/RestKit-Prefix.pch";
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				HEADER_SEARCH_PATHS = "$(SRCROOT)/Tests/Vendor/OCMock";
+				HEADER_SEARCH_PATHS = "\"$(SRCROOT)/Tests/Vendor/OCMock\"";
 				INFOPLIST_FILE = "Resources/PLISTs/RestKitFrameworkTests-Info.plist";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
@@ -3248,7 +3276,7 @@
 				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				FRAMEWORK_SEARCH_PATHS = (
-					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
 					"\"$(SRCROOT)/Tests/Vendor\"",
 					"\"$(SRCROOT)/Tests/Vendor/OCHamcrest\"",
 				);
@@ -3256,7 +3284,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Code/Support/RestKit-Prefix.pch";
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				HEADER_SEARCH_PATHS = "$(SRCROOT)/Tests/Vendor/OCMock";
+				HEADER_SEARCH_PATHS = "\"$(SRCROOT)/Tests/Vendor/OCMock\"";
 				INFOPLIST_FILE = "Resources/PLISTs/RestKitFrameworkTests-Info.plist";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
@@ -3269,10 +3297,10 @@
 			};
 			name = Release;
 		};
-		25EC1B0914F8078100C3CF3F /* Debug */ = {
+		259C302015128079003066A2 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Resources/RestKitResources-Prefix.pch";
@@ -3283,15 +3311,15 @@
 				MACOSX_DEPLOYMENT_TARGET = 10.7;
 				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
+				SDKROOT = macosx;
 				WRAPPER_EXTENSION = bundle;
 			};
 			name = Debug;
 		};
-		25EC1B0A14F8078100C3CF3F /* Release */ = {
+		259C302115128079003066A2 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -3302,7 +3330,7 @@
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
 				MACOSX_DEPLOYMENT_TARGET = 10.7;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
+				SDKROOT = macosx;
 				WRAPPER_EXTENSION = bundle;
 			};
 			name = Release;
@@ -3355,11 +3383,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		25EC1B0B14F8078100C3CF3F /* Build configuration list for PBXNativeTarget "RestKitResources" */ = {
+		259C301F15128079003066A2 /* Build configuration list for PBXNativeTarget "RestKitResources" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				25EC1B0914F8078100C3CF3F /* Debug */,
-				25EC1B0A14F8078100C3CF3F /* Release */,
+				259C302015128079003066A2 /* Debug */,
+				259C302115128079003066A2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

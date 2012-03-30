@@ -26,7 +26,6 @@
 #import "NSManagedObject+ActiveRecord.h"
 #import "RKObjectMappingProvider+CoreData.h"
 
-
 @interface RKManagedObjectLoaderTest : RKTestCase {
 
 }
@@ -36,7 +35,7 @@
 @implementation RKManagedObjectLoaderTest
 
 - (void)testShouldDeleteObjectFromLocalStoreOnDELETE {
-    RKManagedObjectStore* store = [RKTestFactory objectStore];
+    RKManagedObjectStore* store = [RKTestFactory managedObjectStore];
     [store save:nil];
     RKObjectManager* objectManager = [RKTestFactory objectManager];
     objectManager.objectStore = store;
@@ -61,7 +60,7 @@
 }
 
 - (void)testShouldLoadAnObjectWithAToOneRelationship {
-    RKManagedObjectStore* store = [RKTestFactory objectStore];
+    RKManagedObjectStore* store = [RKTestFactory managedObjectStore];
     RKObjectManager* objectManager = [RKTestFactory objectManager];
     objectManager.objectStore = store;
 
@@ -84,7 +83,7 @@
 }
 
 - (void)testShouldDeleteObjectsMissingFromPayloadReturnedByObjectCache {
-    RKManagedObjectStore* store = [RKTestFactory objectStore];
+    RKManagedObjectStore* store = [RKTestFactory managedObjectStore];
     RKManagedObjectMapping* humanMapping = [RKManagedObjectMapping mappingForEntityWithName:@"RKHuman"
                                                                        inManagedObjectStore:store];
     [humanMapping mapKeyPath:@"id" toAttribute:@"railsID"];
@@ -127,7 +126,7 @@
 }
 
 - (void)testShouldNotAssertDuringObjectMappingOnSynchronousRequest {
-    RKManagedObjectStore* store = [RKTestFactory objectStore];
+    RKManagedObjectStore* store = [RKTestFactory managedObjectStore];
     RKObjectManager* objectManager = [RKTestFactory objectManager];
     objectManager.objectStore = store;
 
@@ -142,21 +141,22 @@
 }
 
 - (void)testShouldSkipObjectMappingOnRequestCacheHitWhenObjectCachePresent {
-    RKTestClearCacheDirectory();
+    [RKTestFactory clearCacheDirectory];
 
-    RKObjectManager* objectManager = [RKTestFactory objectManager];
-    RKManagedObjectStore* objectStore = [RKTestFactory objectStore];
+    RKObjectManager *objectManager = [RKTestFactory objectManager];
+    RKManagedObjectStore *objectStore = [RKTestFactory managedObjectStore];
     objectManager.objectStore = objectStore;
-    RKManagedObjectMapping* humanMapping = [RKManagedObjectMapping mappingForEntityWithName:@"RKHuman" inManagedObjectStore:objectStore];
+    RKManagedObjectMapping *humanMapping = [RKManagedObjectMapping mappingForEntityWithName:@"RKHuman" inManagedObjectStore:objectStore];
     [humanMapping mapKeyPath:@"id" toAttribute:@"railsID"];
     [humanMapping mapAttributes:@"name", nil];
     humanMapping.primaryKeyAttribute = @"railsID";
+    humanMapping.rootKeyPath = @"human";
 
     [RKHuman truncateAll];
     assertThatInteger([RKHuman count:nil], is(equalToInteger(0)));
-    RKHuman* blake = [RKHuman createEntity];
+    RKHuman *blake = [RKHuman createEntity];
     blake.railsID = [NSNumber numberWithInt:123];
-    RKHuman* other = [RKHuman createEntity];
+    RKHuman *other = [RKHuman createEntity];
     other.railsID = [NSNumber numberWithInt:456];
     [objectStore save:nil];
     assertThatInteger([RKHuman count:nil], is(equalToInteger(2)));
@@ -167,8 +167,8 @@
     }];
 
     {
-        RKTestResponseLoader* responseLoader = [RKTestResponseLoader responseLoader];
-        RKManagedObjectLoader* objectLoader = [objectManager loaderWithResourcePath:@"/coredata/etag"];
+        RKTestResponseLoader *responseLoader = [RKTestResponseLoader responseLoader];
+        RKManagedObjectLoader *objectLoader = [objectManager loaderWithResourcePath:@"/coredata/etag"];
         objectLoader.delegate = responseLoader;
         id mockLoader = [OCMockObject partialMockForObject:objectLoader];
         [[[mockLoader expect] andForwardToRealObject] performMapping:[OCMArg setTo:OCMOCK_ANY]];
@@ -183,8 +183,8 @@
         assertThatInteger([responseLoader.objects count], is(equalToInteger(2)));
     }
     {
-        RKTestResponseLoader* responseLoader = [RKTestResponseLoader responseLoader];
-        RKManagedObjectLoader* objectLoader = [objectManager loaderWithResourcePath:@"/coredata/etag"];
+        RKTestResponseLoader *responseLoader = [RKTestResponseLoader responseLoader];
+        RKManagedObjectLoader *objectLoader = [objectManager loaderWithResourcePath:@"/coredata/etag"];
         objectLoader.delegate = responseLoader;
         id mockLoader = [OCMockObject partialMockForObject:objectLoader];
         [[mockLoader reject] performMapping:[OCMArg setTo:OCMOCK_ANY]];

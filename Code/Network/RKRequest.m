@@ -529,8 +529,6 @@ RKRequestMethod RKRequestMethodTypeFromName(NSString *methodName) {
 
 			_isLoading = YES;
 
-            // TODO: WTF? Why was this afterDelay in here???
-//            [self performSelector:@selector(didFinishLoad:) withObject:[self loadResponseFromCache] afterDelay:0];
             [self didFinishLoad:[self loadResponseFromCache]];
 
 		} else {
@@ -539,7 +537,7 @@ RKRequestMethod RKRequestMethodTypeFromName(NSString *methodName) {
     		NSDictionary *userInfo = [NSDictionary dictionaryWithObjectsAndKeys:
     								  errorMessage, NSLocalizedDescriptionKey,
     								  nil];
-		NSError* error = [NSError errorWithDomain:RKErrorDomain code:RKRequestBaseURLOfflineError userInfo:userInfo];
+            NSError* error = [NSError errorWithDomain:RKErrorDomain code:RKRequestBaseURLOfflineError userInfo:userInfo];
             _isLoading = YES;
             [self performSelector:@selector(didFailLoadWithError:) withObject:error afterDelay:0];
         }
@@ -815,7 +813,7 @@ RKRequestMethod RKRequestMethodTypeFromName(NSString *methodName) {
     NSError *error = nil;
     NSString* parsedValue = [parser stringFromObject:body error:&error];
     
-    NSLog(@"parser=%@, error=%@, parsedValue=%@", parser, error, parsedValue);
+    RKLogTrace(@"parser=%@, error=%@, parsedValue=%@", parser, error, parsedValue);
     
     if (error == nil && parsedValue) {
         self.params = [RKRequestSerialization serializationWithData:[parsedValue dataUsingEncoding:NSUTF8StringEncoding]

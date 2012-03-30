@@ -25,10 +25,10 @@
 #import "RKObjectPropertyInspector.h"
 #import "RKObjectPropertyInspector+CoreData.h"
 #import "RKAlert.h"
-#import "RKLog.h"
 #import "RKDirectory.h"
 #import "RKInMemoryMappingCache.h"
 #import "NSBundle+RKAdditions.h"
+#import "NSManagedObjectContext+RKAdditions.h"
 
 // Set Logging Component
 #undef RKLogComponent
@@ -104,21 +104,8 @@ static RKManagedObjectStore *defaultObjectStore = nil;
             // NOTE: allBundles permits Core Data setup in unit tests
 			nilOrManagedObjectModel = [NSManagedObjectModel mergedModelFromBundles:[NSBundle allBundles]];
         }
-		NSMutableArray* allManagedObjectModels = [[NSMutableArray alloc] init];
-		[allManagedObjectModels addObject:nilOrManagedObjectModel];
-
-		NSURL* rkCoreDataLibraryMOMURL = [[NSBundle restKitResourcesBundle] URLForResource:@"RestKitCoreData"
-                                                                             withExtension:@"momd"];
-		NSManagedObjectModel* rkCoreDataLibraryMOM = [[NSManagedObjectModel alloc] initWithContentsOfURL:rkCoreDataLibraryMOMURL];
-        if (rkCoreDataLibraryMOM) {
-            [allManagedObjectModels addObject:rkCoreDataLibraryMOM];
-            [rkCoreDataLibraryMOM release];
-        } else {
-            RKLogWarning(@"Unable to find RestKitCoreData.momd within the RestKitResources.bundle");
-        }
-
+		NSMutableArray* allManagedObjectModels = [NSMutableArray arrayWithObject:nilOrManagedObjectModel];
 		_managedObjectModel = [[NSManagedObjectModel modelByMergingModels:allManagedObjectModels] retain];
-		[allManagedObjectModels release];
 
         if (nilOrNameOfSeedDatabaseInMainBundle) {
             [self createStoreIfNecessaryUsingSeedDatabase:nilOrNameOfSeedDatabaseInMainBundle];
@@ -277,6 +264,7 @@ static RKManagedObjectStore *defaultObjectStore = nil;
 	[managedObjectContext setPersistentStoreCoordinator:self.persistentStoreCoordinator];
 	[managedObjectContext setUndoManager:nil];
 	[managedObjectContext setMergePolicy:NSMergeByPropertyStoreTrumpMergePolicy];
+    managedObjectContext.managedObjectStore = self;
     
 	return managedObjectContext;
 }
